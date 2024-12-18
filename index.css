@@ -1,0 +1,163 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:white;
+}
+/********************HEADER*****************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    color:  #008080;
+    position: sticky;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+header .myLogo {
+    width: 80px;
+    height: 80px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+header nav ul li a {
+    color:  #008080;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    background-color:  #008080;
+    color: white;
+    border-radius: 5px;
+}
+/********************MAIN**********************/
+h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+h2{
+    font-size: 30px;
+    color:  #008080;
+   
+}
+
+h3{
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+}
+
+.home {
+width: 100vw;
+height: 50vh;
+    text-align: center;
+    padding: 100px 32px;
+   background-image: url('image/AssignmentBanner.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+
+.about, .myProjects, .myContact {
+    padding: 48px 32px;
+    text-align: center;
+}
+
+.myProject-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.card {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+img{
+   width: 100%;
+}
+
+.myContact form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.myContact form label {
+    text-align: left;
+}
+
+.myContact form input, .myContact form textarea, .myContact form button {
+    padding: 8px;
+    border: 1px solid #008080;
+    border-radius: 5px;
+    outline: none;
+}
+
+.myContact form input{
+    height: 40px;
+}
+
+.myContact form button {
+    height: 40px;
+    font-size: 20px;
+    background-color:  #008080;
+    color: white;
+    cursor: pointer;
+}
+
+.myContact form button:hover {
+    background-color:white;
+    color:  #008080;
+    
+}
+/*********************FOOTER**********************/
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #008080 ;
+    color: white;
+}
+
+footer .social-media {
+    margin-bottom: 15px;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 8px;
+    font-size: 25px;
+    text-decoration: none;
+}
+footer .social-media a:hover {
+    color: rgb(65, 207, 212);
+    margin: 0 8px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
